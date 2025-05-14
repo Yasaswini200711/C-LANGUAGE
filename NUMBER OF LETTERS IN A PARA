@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<string.h>
+void main(){
+    char para[100];
+    gets(para);
+    int c=1;
+    for(int i=0;i<strlen(para);i++){
+        if(para[i]==' ' && para[i+1]!=' '){
+            c++;
+        }
+    }
+    printf(" no. of words: %d",c);
+}
