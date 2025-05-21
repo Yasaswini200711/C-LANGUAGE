@@ -1,0 +1,19 @@
+#include<stdio.h>
+void pf(int n,int a)
+{
+    if(n==1)
+        return;
+    while(n%a!=0)
+    {
+        a++;
+    }
+    printf("\n%d",a);
+    pf(n/a,2);
+}
+void main()
+{
+    int n;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    pf(n,2);
+}
